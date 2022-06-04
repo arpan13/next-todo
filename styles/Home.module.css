@@ -2,6 +2,40 @@
   padding: 0 2rem;
 }
 
+.inputTodo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.inputTodo input {
+
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  outline: none;
+}
+
+.inputTodo input:focus {
+  transform: translateY(-10px);
+  transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+.inputTodo button {
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  height: 30px;
+  color: var(--primary-color);
+  background-color: #31064c;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -29,7 +63,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #cfc5dd;
   text-decoration: none;
 }
 
@@ -43,6 +77,8 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: var(--primary-color);
+
 }
 
 .title,
