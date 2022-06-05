@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faTrash
 } from "@fortawesome/free-solid-svg-icons";
-export default function Card({ todo }) {
+export default function Card({ todo, id, deleteTodo }) {
     const [checked, setChecked] = useState(false);
 
     function onClickCheckBox() {
@@ -21,7 +21,7 @@ export default function Card({ todo }) {
 
             <h3>{todo}</h3>
             <div>
-                <FontAwesomeIcon icon={faTrash} />
+                <FontAwesomeIcon icon={faTrash} onClick={() => deleteTodo(id)} />
             </div>
 
 
